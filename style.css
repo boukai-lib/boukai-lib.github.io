@@ -1,0 +1,439 @@
+/* (C)opylight 望海中学校 図書委員会 広報部門(2026) All Rights Reserved.
+※このページには、Template Party (敬称略)のものを使用しているものがあります。*/
+
+/*Template Partyのパーツ*/
+
+/*sectionの上書き（左右だけ0に）
+---------------------------------------------------------------------------*/
+section {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/*コンテンツ
+---------------------------------------------------------------------------*/
+/*コンテンツブロック*/
+#contents {
+	padding: var(--content-space);	/*css冒頭のcontent-spaceを読み込みます*/
+}
+
+
+/*mainブロック設定
+---------------------------------------------------------------------------*/
+/*main-contents-partsの設定*/
+.main-contents-parts {
+	margin-bottom: 30px;		/*ボックスの下に空けるスペース。sub-contents-partsとの間の余白です。*/
+}
+
+/*メインコンテンツの中の最初の要素の上余白をなくす*/
+.main-contents-parts > *:first-child,
+.main-contents-parts > section:first-child > *:first-child {
+	padding-top: 0;
+	margin-top: 0;
+}
+
+	/*画面幅900px以上の追加指定*/
+	@media screen and (min-width:900px) {
+
+	/*カラムで使う為の指定*/
+	span.column-parts {
+		display: flex;	/*flexボックスを使う指定*/
+		justify-content: space-between;	/*並びかたの種類の指定*/
+		gap: 2rem;						/*main-contents-partsとsub-contents-partsの間のマージン的な隙間*/
+	}
+	
+	/*main-contents-partsの設定*/
+	.main-contents-parts {
+		margin-bottom: 0;
+		order: 2;			/*並び順。数字の小さい順番に表示されます。*/
+		flex: 1;
+	}
+	
+	/*.sub-contents-parts*/
+	.sub-contents-parts {
+		width: 300px;	/*幅*/
+		flex-shrink: 0;
+	}
+
+	/*1つ目のsub-contents*/
+	.sub-contents-parts:nth-child(2) {
+		order: 1;	/*並び順。数字の小さい順番に表示されます。*/
+	}
+	
+	/*2つ目のsub-contents*/
+	.sub-contents-parts:nth-child(3) {
+		order: 3;	/*並び順。数字の小さい順番に表示されます。３番目という意味なので一番右側に表示されます。*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+    /*sub-contents-parts設定
+---------------------------------------------------------------------------*/
+/*ブロック内のh4タグ*/
+#contents .sub-contents-parts h4 {
+	margin: 0;border: none;
+	font-weight: normal;
+	background: #666;	/*背景色*/
+	color: #fff;		/*文字色*/
+	text-align: center;	/*内容をセンタリング*/
+	padding: 0.5em;		/*タグ内の余白*/
+}
+#contents .sub-contents-parts h4 a {color: inherit;}
+
+/*サブメニュー設定
+---------------------------------------------------------------------------*/
+/*サブメニューブロック全体*/
+.submenu-parts {
+	padding: 0;
+	margin: 0 0 1rem !important;	/*上、左右、下へのマージン*/
+}
+
+/*メニュー１個あたり*/
+.submenu-parts li {
+	border-bottom: 1px solid rgba(0,0,0,0.1);	/*下線の幅、線種、色。0,0,0は黒の事で0.1は色が10%出た状態。*/
+}
+.submenu-parts a {
+	display: block;text-decoration: none;
+	background: #fff;		/*背景色*/
+	padding: 0.2rem 1rem;	/*上下、左右へのメニュー内の余白*/
+}
+
+/*アイコン（Font Awesome）*/
+.submenu-parts a::before {
+	transition: 0.3s;
+	font-family: "Font Awesome 5 Free";	/*Font Awesomeを使う指定*/
+	content: "\f0da";		/*使いたいアイコン名をここで指定。Font Awesomeに記載されています。詳しくは当テンプレートのマニュアルを読んで下さい。*/
+	color: #ABABAB;			/*アイコンの色*/
+	padding-right: 0.8em;	/*アイコンとテキストの間の余白*/
+	font-weight: bold;		/*この設定がないとアイコンが出ない場合があります*/
+}
+
+/*マウスオン時のアイコン設定*/
+.submenu-parts a:hover::before {
+	color: #666;			/*アイコンの色*/
+}
+
+
+/*box1-parts
+---------------------------------------------------------------------------*/
+/*ボックス全体の設定*/
+.box1-parts {
+	background: rgba(0,0,0,0.05);	/*背景色。0,0,0は黒の事で0.05は色が5%出た状態。*/
+	padding: 10px;					/*ボックス内の余白*/
+	border-radius: 5px;				/*角を丸くする指定*/
+	margin-bottom: 1rem;			/*ボックスの下に空けるスペース*/
+}
+
+/*box1-parts内でsubmenu-partsを使った場合、下のマージンをなくす*/
+.sub-contents-parts .box1-parts .submenu-parts {
+	margin-bottom: 0 !important;
+}
+
+/*スライドショー
+---------------------------------------------------------------------------*/
+.slide-parts * {margin: 0;padding: 0;}
+
+/*スライドショー全体を囲むブロック*/
+.slide7-parts {
+	width: 100%;position: relative;
+	margin-bottom: 50px;	/*ボックスの下に空けるスペース*/
+	line-height: 1.5;		/*行間を少し狭く*/
+}
+
+/*スライド１枚あたり*/
+.slide7-parts .slide-parts {
+	position: relative;
+}
+
+/*３枚の画像の共通設定*/
+.slide7-parts .slide-parts {
+	position: absolute;right: 0px;top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s;	/*ここの1s（＝1秒）を変更すると、フェードのスピードを変更できます。１枚が表示される時間はjsで指定できます。*/
+}
+
+/*１枚目画像（変更不要）*/
+.slide7-parts .img1-parts {
+	position: relative;width: 100%;height: auto;
+}
+
+/*画像全般（変更不要）*/
+.slide7-parts .slide-parts img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;			/*画像をコンテナのサイズに合わせてクリップ*/
+    object-position: center;	/*画像の中心を基準に*/
+}
+
+
+/*スライドショー上のテキスト
+---------------------------------------------------------------------------*/
+/*テキストブロックの基本設定（中央配置がデフォルト）*/
+.slide7-parts .slide-parts .text-parts {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 0 3rem;
+	z-index: 10;
+}
+
+/*テキストブロックを左に配置させたい場合*/
+.slide7-parts .slide-parts .text-parts.left-parts {
+	align-items: flex-start;
+	text-align: left;
+}
+
+/*テキストブロックを右に配置させたい場合*/
+.slide7-parts .slide-parts .text-parts.right-parts {
+	align-items: flex-end;
+	text-align: right;
+}
+
+/*テキストブロックをインラインにする為のブロック*/
+.slide7-parts .slide-parts .text-parts .text-bg {
+	display: inline-block;
+	padding: 1rem 2rem;	/*上下に1文字分、左右に2文字分の余白をとる*/
+	background: rgba(0,0,0,0.3);	/*背景色。0,0,0は黒の事で0.3は色が30%出た状態。*/
+	color: #fff;					/*文字色*/
+	border-radius: 5px;				/*角を少し丸くする*/
+	text-shadow: 1px 1px rgba(0,0,0,0.5);	/*テキストの影。右へ、下へ。rgbaは影の色。*/
+}
+
+	/*画面幅400px以下の追加指定*/
+	@media screen and (max-width:400px) {
+
+	/*p（説明テキスト部分）*/
+	.slide7-parts .slide-parts .text-parts p {
+		display: none;	/*画面が狭くなるので、説明文だけ非表示にする。*/
+	}
+
+	}/*追加指定ここまで*/
+
+
+/*h2（大きな文字）*/
+.slide7-parts .slide-parts .text-parts h2 {
+	font-size: 4vw;	/*文字サイズ。１文字あたり画面幅の約4%。*/
+}
+
+/*p（説明テキスト部分）*/
+.slide7-parts .slide-parts .text-parts p {
+	font-size: 0.9rem;	/*文字サイズ90%*/
+}
+
+
+/*現在表示されているスライドのみをクリック可能にする設定（変更不要）
+---------------------------------------------------------------------------*/
+.slide7-parts .slide-parts {
+	pointer-events: none; /* デフォルトでクリックを無効にする */
+}
+
+.slide7-parts .slide-parts.active {
+    pointer-events: auto; /* 表示中のスライドのみクリックを有効にする */
+}
+
+/*現在表示中のボタン
+---------------------------------------------------------------------------*/
+/*全体*/
+.slide7-parts .slide-indicators {
+    text-align: center;
+	position: absolute;
+	width: 100%;
+	bottom: -40px;	/*ボタンの配置場所。0以上の数値にすれば画像の上に重なります。*/
+	left: 0px;
+}
+/*１個あたり*/
+.slide7-parts .indicator {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #ccc;	/*未アクティブ時のボタン色*/
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.slide7-parts .indicator.active {
+    background: #000;	/*アクティブ時のボタン色*/
+}
+
+/*Template Party 終わり*/
+
+body{
+	color: #000;
+	background-color: #fff;
+    text-align: center;
+	font-family: NOTO35HS;
+	/* background-image: url(https://c.pxhere.com/photos/02/99/trees_wood_yellow_wood_oak_sandalwood_teak_wood_grain-1161832.jpg!d) */
+}
+
+a img{
+	border: none;
+}
+
+.wlcm {
+	font-family: Madoka;
+}
+
+@font-face {
+	font-family: Cascadia-Code;
+	src: local(Cascadia Code), url(./fonts/CascadiaCode.ttf) format(font/ttf);
+}
+
+@font-face {
+	font-family: Madoka;
+	src: local(),url(./fonts/NKF22_MAGICUM_CANONICUM_ROTUNDUM.TTF);
+}
+
+@font-face {
+	font-family: NOTO35HS;
+	src: url(./fonts/NOTONOTO35HS-Regular.ttf);
+}
+
+code {
+	background-color: #eee;
+	border-radius: 3px;
+	font-family: Cascadia-Code;
+	padding: 0.3px;
+  }  
+
+/*.newstable{
+	width: 950px;
+	height: 300px;
+} */
+
+table{
+    margin: auto;
+	border-width: 1px;
+	border-color: #000;
+}
+
+
+.HeaderTable {
+    background-color: #d7dde0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    width: 100%;
+    max-width: 770px;
+    text-align: center;
+    height: 50px;
+}
+
+.HeaderTableData{
+  background-color: #d7dde0;
+  height: 45px;
+  width: 60px;
+}
+
+.HeaderTableNowPage {
+  background-color: #ff76f8;
+  height: 45px;
+  width: 60px;
+}
+
+.HeaderTableNowPage:hover {
+    background-color: #ff48f6;
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.HeaderTableData:hover {
+    background-color: #7bff76;
+    transition: transform .5s ease;
+    transform: scale(1.2);
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.copy{
+	align-items: flex-end;
+}
+
+.minisize{
+	font-size: 5px;
+}
+
+.linkcamouf{
+    color: #000;
+}
+
+.strongred{
+    color: #f00;
+}
+
+.strongpink{
+	color: #ff00b3;
+}
+
+.dark{
+    background-color: #666;
+}
+
+.font_serif{
+	font-family: serif;
+}
+
+.ysee {
+	display: inline-block;
+	font-size: 30px;
+	font-weight: bold;
+	background: linear-gradient(90deg, #ff00ff 0%, #00ffff 40%, #00ff00 80%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.pdf-download-button {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	border: solid 2px #ff4444;
+	border-radius: 3px;
+	transition: .4s;
+  }
+  
+  .pdf-download-button:hover {
+	background: #ff4444;
+	color: white;
+  }
+
+.docx-download-button {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	border: solid 2px #4460ff;
+	border-radius: 3px;
+	transition: .4s;
+  }
+  
+  .docx-download-button:hover {
+	background: #4460ff;
+	color: white;
+  }
+
+  .game-download-button {
+	display: inline-block;
+	padding: 0.3em 1em;
+	text-decoration: none;
+	border: solid 2px #5aff4b;
+	border-radius: 3px;
+	transition: .4s;
+  }
+
+  .game-download-button:hover {
+	background: #5aff4b;
+	color: black;
+	text-decoration: underline;
+  }

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version='2.0'>
+	<channel>
+		<title>望海中学校 図書室 NEWS</title>
+		<link>http://boukai-lib/github.io/news/</link>
+		<description>望海中学校 図書委員会 広報部門 がお伝えするニュース。</description>
+		<item>
+			<title>インターネットやめろ</title>
+			<link>http://boukai-lib/github.io/news/#2026-01-09</link>
+			<description>Webサイトを公開しました。など。</description>
+			<pubDate>Fri, 9 Jan 2026 09:00:00 GMT</pubDate>
+		</item>
+	</channel>
+</rss>
