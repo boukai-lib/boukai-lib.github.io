@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /news/newsdata/ #ニュースのデータのみ秘匿。
-Disallow: /game/download/ #ゲームのZIP等を秘匿。
-Disallow: /game/play/ #ゲームを秘匿。
-Disallow: /html/ #いろいろと。
-Disallow: /error/ #エラーメッセージとかだれがみたいの...
