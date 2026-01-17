@@ -340,7 +340,7 @@ window.__tyrano_key_config = {
         
         "Enter"      : "ok     -a",
         "Escape"     : "cancel -a",
-        " "          : "hidemessage",
+        "h"          : "hidemessage",
         "Meta"       : "holdskip", // Mac の Command キーのこと
         "Control"    : "holdskip",
         "m"          : "menu",

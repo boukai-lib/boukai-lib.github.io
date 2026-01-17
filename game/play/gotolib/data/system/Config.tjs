@@ -3,8 +3,8 @@
 ;configSave=webstorage
 ;global.config_version=6.00
 ;System.title=Library
-;projectID=tyranoproject
-;game_version=0.0
+;projectID=GoToLibrary
+;game_version=1.0
 ;ScreenRatio=fix
 ;patch_apply_auto=true
 ;ScreenCentering=true
@@ -40,7 +40,7 @@
 ;configThumbnailQuality=middle
 ;configThumbnailScale=0.3
 ;configSaveSlotNum=5
-;configSaveDateFormat=yyyy/M/d h:mm:ss
+;configSaveDateFormat=yyyy/MM/dd hh:mm:ss
 ;configSaveOverwrite=false
 ;maxBackLogNum=50
 ;autoRecordLabel=false

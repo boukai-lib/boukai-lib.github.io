@@ -10,3 +10,12 @@
     font-style: normal;
 }
 */
+
+@font-face {
+    font-family: IBMVGA;
+    src: url("../../data/others/Bm437_IBM_VGA_8x16.FON") format("bitmap"),
+         url("../../data/others/Web437_IBM_VGA_8x16.woff") format("woff"),
+         url("../../data/others/Mx437_IBM_VGA_9x16.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
