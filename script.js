@@ -1,91 +1,40 @@
-/*(C)opylight 望海中学校 図書委員会 広報部門(2026) All Rights Reserved. */
-
-
-//月刊図書のダウンロード
-document.getElementById('2025-04-pdf').addEventListener('click', function() {
-    var fileUrl = 'paperfile/第三号.pdf'; // ダウンロードするファイルのURL
-    var fileName = '第三号.pdf'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById('2024-11-pdf').addEventListener('click', function() {
-    var fileUrl = 'paperfile/初号.pdf'; // ダウンロードするファイルのURL
-    var fileName = '初号.pdf'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById('2024-12-pdf').addEventListener('click', function() {
-    var fileUrl = 'paperfile/初号.pdf'; // ダウンロードするファイルのURL
-    var fileName = '第二号.pdf'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById('2025-04-dpcx').addEventListener('click', function() {
-    var fileUrl = 'paperfile/第三号.docx'; // ダウンロードするファイルのURL
-    var fileName = '第三号.docx'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById('2024-11-docx').addEventListener('click', function() {
-    var fileUrl = 'paperfile/初号.docx'; // ダウンロードするファイルのURL
-    var fileName = '初号.docx'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById('2024-12-docx').addEventListener('click', function() {
-    var fileUrl = 'paperfile/第二号.docx'; // ダウンロードするファイルのURL
-    var fileName = '第二号.docx'; // ダウンロードする際のファイル名
-
-    var a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = fileUrl;
-    a.download = fileName;
-
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-});
-
-document.getElementById("ott-dl-link").addEventListener("click", function () {
-    this.setAttribute("download", "template.ott");
-});
+var element = document.getElementById('gotolib-pw');
+var IsHidden = 1;
+var IsDebug = false;
+function debugmode() {
+    if (IsDebug) {
+        IsDebug = false;
+        console.log("デバッグモードが無効になりました。");
+    }
+    else if (!IsDebug) {
+        IsDebug = true;
+        console.log("デバッグモードが有効になりました。");
+    }
+    else {
+        console.error('エラー: 無効な値です。 ErrorID: BkaiWebError(InvalidValue_debugmode-001)');
+    }
+}
+function updateElementText() {
+    if (element !== null) {
+        if (IsHidden === 0) {
+            element.textContent = '*******';
+            IsHidden = 1;
+            if (IsDebug) {
+                console.log("IsHidden: " + IsHidden);
+            }
+        }
+        else if (IsHidden === 1) {
+            element.textContent = 'gotolib';
+            IsHidden = 0;
+            if (IsDebug) {
+                console.log("IsHidden: " + IsHidden);
+            }
+        }
+        else {
+            console.error('エラー: 無効な値です。 ErrorID: BkaiWebError(InvalidValue_gotolib-002)');
+        }
+    }
+    else {
+        console.error('エラー: 要素が見つかりません。 ErrorID: BkaiWebError(MissingElement_gotolib-001)');
+    }
+}
