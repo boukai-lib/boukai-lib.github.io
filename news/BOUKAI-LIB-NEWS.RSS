@@ -1,37 +1,37 @@
-<?xml version='1.0' encoding='Shift-JIS'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <rss version='2.0'>
 	<channel>
-		<title>�]�C���w�Z �}���� NEWS</title>
+		<title>望海中学校 図書室 NEWS</title>
 		<link>http://boukai-lib/github.io/news/</link>
-		<description>�]�C���w�Z �}���ψ��� �L�񕔖� �����`������j���[�X�B</description>
+		<description>望海中学校 図書委員会 広報部門 がお伝えするニュース。</description>
 		<item>
-			<title>�C���^�[�l�b�g��߂�</title>
+			<title>インターネットやめろ</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-09</link>
-			<description>Web�T�C�g�����J���܂����B�ȂǁB</description>
+			<description>Webサイトを公開しました。など。</description>
 			<pubDate>Fri, 9 Jan 2026 09:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>�w�����ɂ̌����̂��߁A�ԋp���āI</title>
+			<title>学級文庫の交換のため、返却して！</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-22-1</link>
-			<description>�w�����ɂ������X�V����܂��I�ȂǁB</description>
+			<description>学級文庫が明日更新されます！など。</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>�w�����ɂɐV���x</title>
+			<title>学級文庫に新制度</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-22-2</link>
-			<description>�w�����ɂɐV���x�ł��B�ȂǁB</description>
+			<description>学級文庫に新制度です。など。</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>�}�����ɍs����! ���������[�X���B</title>
+			<title>図書室に行こう! 正式リリースか。</title>
 			<link>http://boukai-lib/github.io/news/#2026-03-03-1</link>
-			<description>�N�̖ڂɂ��G����Ă��Ȃ��}�C�i�[�C���f�B�[�Q�[���w�}�����ɍs����!�x�̐��������[�X�ł��{�����\����܂����B�ȂǁB</description>
+			<description>誰の目にも触れられていないマイナーインディーゲーム『図書室に行こう!』の正式リリース版が本日発表されました。など。</description>
 			<pubDate>Tue, 03 Mar 2026 10:23:45 GMT</pubDate>
 		</item>
 		<item>
-			<title>�L�񕔖�R���e���c���p�K�񂪍X�V����܂��B</title>
+			<title>広報部門コンテンツ利用規約が更新されます。</title>
 			<link>http://boukai-lib/github.io/news/#2026-03-03-2</link>
-			<description>�L�񕔖�R���e���c���p�K�񂪍X�V����܂����B�ȂǁB</description>
+			<description>広報部門コンテンツ利用規約が更新されました。など。</description>
 			<pubDate>Tue, 03 Mar 2026 21:19:40 GMT</pubDate>
 		</item>
 	</channel>
