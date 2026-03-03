@@ -13,59 +13,51 @@
 ;最初は右下のメニューボタンを非表示にする
 [hidemenubutton]
 
-;questions
-[iscript]
-    var CongQ = 0;
-    const allquestions = 4;
-[endscript]
-
-;マクロ
-[macro name="random" ]
-    [iscript]
-        var RandomMax=mp.max;
-        f.RandomValue=Math.floor(Math.random() * mp.max);
-    [endscript]
-[endmacro]
-[macro name="addcong" ]
-    [iscript]
-        var CongQ = CongQ + 1;
-        if (CongQ == allquestions) {
-            f.Conged = true;
-        }
-    [endscript]
-[endmacro]
+[call storage="macro.ks" ]
 
 ;初期化終わり
 
+[jump target="normal" ]
+/*
 [start_keyconfig]
-[font face="IBMVGA" effect="none" ][delay speed="0" ]
+[font face="IBMVGA" effect="none" color="0xc4c4c4" ][delay speed="0" ]
 Starting gotolib[delay speed="250"]...[r]
 [delay speed="10" ][wait time="400" ]
-Choose Boot Mode.[r]
-[link target="*normal" keyfocus="1" ]1. Normal Mode[endlink][r]
-[link target="*safemode" keyfocus="2" ]2. Safe Mode[endlink][r]
-[r]
-This game often won't run on the iOS/iPadOS Safari browser.[r]
-If you use Safari, we recommend choosing 'Safe Mode'[r](or using different browser.)
+ブートモードを選択してください。[r]
+[font color="0x000000"][mark size="5" color="0x000000" ][mark color="0xffffff" ]
+[link target="normal" keyfocus="1" ]ノーマルモード[endlink][r]
+[link target="safemode" keyfocus="2" ]セーフモード[endlink][r]
+[r][font size="8pt" color="0xc4c4c4"][endmark ]
+このゲームは、Safariでは正常に実行されない場合があります。[r]
+もしも、Safariブラウザを使用してゲームをプレイしようとしている場合は、セーフモードでプレイしてください。[r](もしくは別のブラウザを使う。)[r]
+Web版において、OSやブラウザの設定によっては正常な状態でプレイすることができません。[r]
+原因は判明しておりません。[r]
+Chromium系ブラウザでは、セキュリティで保護されていないコンテンツの許可をしていただけると、正常にプレイすることができることが確認できております。[r]
+ユーザ各々で対処をお願いします。
 [resetdelay ][resetfont][s]
 [stop_keyconfig]
+*/
 
 *normal
-
 ;UserInterface
 [bg storage="Loading.png" time="500" ]
 [cm]
 @layopt layer="message" visible=false
-@dialog type="alert" text="このゲームでは音声が流れます。NSFWではありませんが電車内や図書室でやると後悔しますよ。音量設定をご確認しやがれください。"
-@dialog type="alert" text="Web版において、OSやブラウザの設定によっては正常な状態でプレイすることができません。原因は判明しておりません。Chromium系ブラウザでは、セキュリティで保護されていないコンテンツの許可をしていただけると、正常にプレイすることができることが確認できております。iOS/iPadOS Safariはプレイ不可です。ユーザ各々で対処をお願いします。"
-@dialog type="confirm" target_cancel="cookie_cancel" text="Web版では、ゲームのセーブにWeb Storageを用います。"
+
+;for debug only
+;[jump target="start" ]
+[dialog type="alert" text="このゲームでは音声が流れます。NSFWではありませんが電車内や図書室でやると後悔しますよ。音量設定をご確認しやがれください。"]
+[dialog type="alert" text="Web版にて、Safariブラウザではゲームが正常に動作しない問題が発生しております。別ブラウザを使用してプレイしてくださいませ。" ]
 [bgmovie storage="BoukaiKouhouSprash.mp4" loop="false" ]
 [wait time="5000" ]
 [stop_bgmovie ]
 [bg storage="warning.png" time="500" wait="true" ]
+
+*start
 [wait time="2000" ]
 @jump storage="title.ks"
 
+/*
 ;タイトル画面へ移動
 *safemode
 [cm]
@@ -77,22 +69,4 @@ If you use Safari, we recommend choosing 'Safe Mode'[r](or using different brows
 [wait time="200" ]
 @jump storage="title.ks"
 
-*cookie_cancel
-@wait time="500"
-[close ask="true" ]
-@wait time="250"
-@jump
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/

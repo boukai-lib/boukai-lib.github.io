@@ -1,26 +1,32 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version='1.0' encoding='Shift-JIS'?>
 <rss version='2.0'>
 	<channel>
-		<title>æœ›æµ·ä¸­å­¦æ ¡ å›³æ›¸å®¤ NEWS</title>
+		<title>–]ŠC’†ŠwZ }‘Žº NEWS</title>
 		<link>http://boukai-lib/github.io/news/</link>
-		<description>æœ›æµ·ä¸­å­¦æ ¡ å›³æ›¸å§”å“¡ä¼š åºƒå ±éƒ¨é–€ ãŒãŠä¼ãˆã™ã‚‹ãƒ‹ãƒ¥ãƒ¼ã‚¹ã€‚</description>
+		<description>–]ŠC’†ŠwZ }‘ˆÏˆõ‰ï L•ñ•”–å ‚ª‚¨“`‚¦‚·‚éƒjƒ…[ƒXB</description>
 		<item>
-			<title>ã‚¤ãƒ³ã‚¿ãƒ¼ãƒãƒƒãƒˆã‚„ã‚ã‚</title>
+			<title>ƒCƒ“ƒ^[ƒlƒbƒg‚â‚ß‚ë</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-09</link>
-			<description>Webã‚µã‚¤ãƒˆã‚’å…¬é–‹ã—ã¾ã—ãŸã€‚ãªã©ã€‚</description>
+			<description>WebƒTƒCƒg‚ðŒöŠJ‚µ‚Ü‚µ‚½B‚È‚ÇB</description>
 			<pubDate>Fri, 9 Jan 2026 09:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>å­¦ç´šæ–‡åº«ã®äº¤æ›ã®ãŸã‚ã€è¿”å´ã—ã¦ï¼</title>
+			<title>Šw‹‰•¶ŒÉ‚ÌŒðŠ·‚Ì‚½‚ßA•Ô‹p‚µ‚ÄI</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-22-1</link>
-			<description>å­¦ç´šæ–‡åº«ãŒæ˜Žæ—¥æ›´æ–°ã•ã‚Œã¾ã™ï¼ãªã©ã€‚</description>
+			<description>Šw‹‰•¶ŒÉ‚ª–¾“úXV‚³‚ê‚Ü‚·I‚È‚ÇB</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
 		</item>
 		<item>
-			<title>å­¦ç´šæ–‡åº«ã«æ–°åˆ¶åº¦</title>
+			<title>Šw‹‰•¶ŒÉ‚ÉV§“x</title>
 			<link>http://boukai-lib/github.io/news/#2026-01-22-2</link>
-			<description>å­¦ç´šæ–‡åº«ã«æ–°åˆ¶åº¦ã§ã™ã€‚ãªã©ã€‚</description>
+			<description>Šw‹‰•¶ŒÉ‚ÉV§“x‚Å‚·B‚È‚ÇB</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
+		</item>
+		<item>
+			<title>Šw‹‰•¶ŒÉ‚ÉV§“x</title>
+			<link>http://boukai-lib/github.io/news/#2026-03-03-1</link>
+			<description>’N‚Ì–Ú‚É‚àG‚ê‚ç‚ê‚Ä‚¢‚È‚¢ƒ}ƒCƒi[ƒCƒ“ƒfƒB[ƒQ[ƒ€w}‘Žº‚És‚±‚¤!x‚Ì³Ž®ƒŠƒŠ[ƒX”Å‚ª–{“ú”­•\‚³‚ê‚Ü‚µ‚½B‚È‚ÇB</description>
+			<pubDate>Tue, 03 Mar 2026 10:23:45 GMT</pubDate>
 		</item>
 	</channel>
 </rss>

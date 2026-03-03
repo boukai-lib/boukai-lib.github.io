@@ -1,0 +1,4 @@
+game/download/gotolib-x64_setup.exe filter=lfs diff=lfs merge=lfs -text
+game/download/gotolib_setup.exe filter=lfs diff=lfs merge=lfs -text
+game/download/gotolib_win_x64.7z filter=lfs diff=lfs merge=lfs -text
+game/download/gotolib_win_x86.7z filter=lfs diff=lfs merge=lfs -text

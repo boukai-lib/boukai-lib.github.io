@@ -1,6 +1,5 @@
 /* Basic layout */
-:root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Hiragino Kaku Gothic ProN",Meiryo,Arial}
-html,body{height:100%;margin:0}
+html,body{height:100%;margin:0;text-align: left;}
 main{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:#f5f7fa}
 
 /* Map container (acts as the map background) */
@@ -10,6 +9,7 @@ main{min-height:100vh;display:flex;align-items:center;justify-content:center;pad
 /* Marker buttons */
 .marker{position:absolute;transform:translate(-50%,-100%);border:0;background:#ff5a5f;color:#fff;padding:8px 10px;border-radius:18px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.15);font-weight:600}
 .marker:hover{outline:3px solid rgba(255, 255, 255, 0.25)}
+.MetaBtn{position:absolute;transform:translate(-50%,-100%);border:0;background:#5aa7ff;color:#fff;padding:8px 10px;border-radius:18px;cursor:pointer;box-shadow:0 4px 10px rgba(0,0,0,0.15);font-weight:900}
 
 /* Popup */
 .popup{position:absolute;min-width:220px;max-width:320px;background:#fff;border-radius:8px;padding:12px 14px;box-shadow:0 12px 30px rgba(10,20,40,0.18);z-index:20}

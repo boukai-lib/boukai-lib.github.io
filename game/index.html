@@ -37,29 +37,38 @@
     <p>ゲームをダウンロード、またはプレイした時点で<a href="../html/kiyaku.html">広報部門コンテンツ利用規約</a>に同意したものとみなします。<br>
         また、READ.ME 若しくは readme.txt をダウンロード前に読むことを推奨します。</p>
     <p><a href="./archive.html">各ゲームのアーカイブ</a></p>
+    <hr>
     <h1>ゲーム</h1>
     <h2 id="gotolib">図書室へ行こう!</h2>
     <a href="./screenshot/gotolib/gotolib1.png"><img src="./screenshot/gotolib/gotolib1.png" alt="" width="30%"></a>
     <a href="./screenshot/gotolib/gotolib2.png"><img src="./screenshot/gotolib/gotolib2.png" alt="" width="30%" title="ゲームの面白さを損なわないようにするため、一部モザイクをかけています"></a>
     <p>図書室にある本から、問題を出題し、答えていくクイズゲームです。<br>
         1.0 Test Release より、Windowsにて 32-bit, 64-bit 両対応しています。<br>
-        最新バージョン Web: 1.0 Test Release　Windows: 1.0 Test Release</p>
+        最新バージョン Web: 1.0　Windows: 1.0</p>
+    <p><strong>Web版にて、Safariブラウザではゲームが正常に動作しない問題が発生しております。別ブラウザを使用してプレイしてくださいませ。</strong></p>
     <p>ダウンロードするファイルはパスワードで保護されていて、またOpenPGPで署名されています。パスワードは"<a href="javascript:updateElementText()" id="gotolib-pw" style="text-decoration: none;" title="Click Here!">*******</a>"です。</p>
-        <p><a href="./download/gotolib-installer_x86.exe.sig">32-bit インストーラー署名</a>　<a href="./download/gotolib-installer_x64.exe.sig">64-bit インストーラー署名</a></p>
-        <p><a href="./download/gotolib_win_x86_1.0-Test-Release.7z.sig">32-bit 7ZIPファイル署名</a>　<a href="./download/gotolib_win_x64_1.0-Test-Release.7z.sig">64-bit 7ZIPファイル署名</a></p>
-    <p><a href="./READ.ME/1.0_Test-Release/readme.txt"><strong>readme</strong></a></p>
-    <p><a href="./play/gotolib/" class="game-download-button">今すぐプレイ (ブラウザ)</a></p>
-    <p><a href="./download/gotolib-installer_x86.exe" class="game-download-button">インストーラー ダウンロード(Windows 32-bit)</a>
-        <a href="./download/gotolib-installer_x64.exe" class="game-download-button">インストーラー ダウンロード(Windows 64-bit)</a></p>
-    <p><a href="./download/gotolib_win_x86_1.0-Test-Release.7z" class="game-download-button">7ZIPファイル ダウンロード(Windows 32-bit)</a>
-        <a href="./download/gotolib_win_x64_1.0-Test-Release.7z" class="game-download-button">7ZIPファイル ダウンロード(Windows 64-bit)</a></p>
+    <p><a href="./READ.ME/1.0/readme.txt"><strong>readme</strong></a></p>
+    <p><a href="./play/gotolib/" class="game-play-button">今すぐプレイ (ブラウザ)</a></p>
+    <p><a href="./download/gotolib_setup.exe" class="game-download-button">インストーラー ダウンロード(Windows 32-bit)</a>
+        <a href="./download/gotolib-x64_setup.exe" class="game-download-button">インストーラー ダウンロード(Windows 64-bit)</a><br>
+        <a href="./download/gotolib_setup.exe.sig">32-bit インストーラー署名</a>　
+        <a href="./download/gotolib-x64_setup.exe.sig">64-bit インストーラー署名</a></p>
+    <p><a href="./download/gotolib_win_x86.7z" class="game-download-button">7ZIPファイル ダウンロード(Windows 32-bit)</a>
+        <a href="./download/gotolib_win_x64.7z" class="game-download-button">7ZIPファイル ダウンロード(Windows 64-bit)</a><br>
+        <a href="./download/gotolib_win_x86.7z.sig">32-bit 7ZIPファイル署名</a>　
+        <a href="./download/gotolib_win_x64.7z.sig">64-bit 7ZIPファイル署名</a></p>
     <hr>
     <h1>アプリケーション</h1>
     <h2>ライブラリマップ・アンド・リコメンドインフォメーション</h2>
     <p>図書室内の人気の本、おすすめの本などの情報を書いている図書室の地図です。</p>
+    <p><a href="../">推奨サイズ</a>より小さいサイズの画面の場合、要素が詰め詰めになってしまいます。<br>改造でもして対処してください。</p>
     <p>JavaScriptが必須です。</p>
-    <p><a href="./apps/libmaps/">起動(ブラウザ)</a></p>
-    
+    <p><a href="./apps/libmaps/" class="game-play-button">起動(ブラウザ)</a></p>
+    <h2 id="RanSui"><ruby>乱推 <rp>(</rp><rt>らんすい</rt><rp>)</rp></ruby></h2>
+    <p>図書室にあるおすすめの本をランダムに表示します。</p>
+    <p>本の題名・著者や、その本がある大体の場所、カテゴリー、なぜおすすめなのか、どのような点が面白いのかなどを表示します。</p>
+    <p><a href="javascript:void(0)" onclick="BootRansui()" class="game-play-button">起動(ブラウザ)</a></p>
+    <output id="RansuiArea"></output>
     <!--著作権表示等-->
         <hr>
         <small>(C)opylight 望海中学校 図書委員会 広報部門(2026) All Rights Reserved.<br>ページの内容やコードをコピー・スクリーンショットすることはご遠慮ください。</small>

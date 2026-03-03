@@ -34,15 +34,19 @@
 
 #望海中学校_図書委員会_広報部門
 使わせていただいた素材やソフトウェアです。[r][l]
-BGM: MusMus, らき☆すた より。[r][l]
-SE: Microsoft Windows(R) より。[r][l]
+BGM: MusMusより。[r][l]
+SE: MusMusより。また、Beam2002, Cakewalk Sonar を使用し自作。[r][l]
 TesMo: VRoid Studioを使い作成、および撮影。[r][l]
 画像: 一部GIMPを使用して自作。[l]一部Tyrano デフォルトを流用。[r][l]
 一部フォント: IBM PCより。[r][l]
 ゲームエンジン: Tyrano Script を使用。[r][l]
-ゲームビルダー: Tyrano Studio を使用。[r][l]
 テキストエディタ: Visual Studio Code を使用。[r][l]
 ソースコード管理: Git, GitHub を使用。[r][l]
 テスト環境: Windows 11[r][l]
-[dialog type="confirm" text="タイトルに戻ります。よろしいですか?" storage="title.ks" ]
+[dialog type="confirm" text="タイトルに戻ります。よろしいですか?" target="gotitle"  ]
 @s
+
+*gotitle
+[cm]
+@layopt layer="message" visible=false
+[jump storage="title.ks" ]

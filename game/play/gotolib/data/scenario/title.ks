@@ -3,9 +3,7 @@
 
 @title name="図書室へ行こう! - Ver. 1.0 Test Release"
 @clearstack
-[bg storage="title_test.png" time="500" wait="false"]
-[playse storage="boot.mp3" cond="f.gamemode!='safe'"]
-@wait time = 3500 cond="f.gamemode!='safe'"
+[bg storage="title.png" time="500" wait="false"]
 
 *start 
 
