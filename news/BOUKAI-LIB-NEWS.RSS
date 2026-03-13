@@ -6,33 +6,39 @@
 		<description>望海中学校 図書委員会 広報部門 がお伝えするニュース。</description>
 		<item>
 			<title>インターネットやめろ</title>
-			<link>http://boukai-lib/github.io/news/#2026-01-09</link>
+			<link>http://boukai-lib.github.io/news/#2026-01-09</link>
 			<description>Webサイトを公開しました。など。</description>
 			<pubDate>Fri, 9 Jan 2026 09:00:00 GMT</pubDate>
 		</item>
 		<item>
 			<title>学級文庫の交換のため、返却して！</title>
-			<link>http://boukai-lib/github.io/news/#2026-01-22-1</link>
+			<link>http://boukai-lib.github.io/news/#2026-01-22-1</link>
 			<description>学級文庫が明日更新されます！など。</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
 		</item>
 		<item>
 			<title>学級文庫に新制度</title>
-			<link>http://boukai-lib/github.io/news/#2026-01-22-2</link>
+			<link>http://boukai-lib.github.io/news/#2026-01-22-2</link>
 			<description>学級文庫に新制度です。など。</description>
 			<pubDate>Thu, 22 Jan 2026 18:00:00 GMT</pubDate>
 		</item>
 		<item>
 			<title>図書室に行こう! 正式リリースか。</title>
-			<link>http://boukai-lib/github.io/news/#2026-03-03-1</link>
+			<link>http://boukai-lib.github.io/news/#2026-03-03-1</link>
 			<description>誰の目にも触れられていないマイナーインディーゲーム『図書室に行こう!』の正式リリース版が本日発表されました。など。</description>
 			<pubDate>Tue, 03 Mar 2026 10:23:45 GMT</pubDate>
 		</item>
 		<item>
 			<title>広報部門コンテンツ利用規約が更新されます。</title>
-			<link>http://boukai-lib/github.io/news/#2026-03-03-2</link>
+			<link>http://boukai-lib.github.io/news/#2026-03-03-2</link>
 			<description>広報部門コンテンツ利用規約が更新されました。など。</description>
 			<pubDate>Tue, 03 Mar 2026 21:19:40 GMT</pubDate>
+		</item>
+		<item>
+			<title>広報部門コンテンツ利用規約が更新されます。</title>
+			<link>http://boukai-lib.github.io/</link>
+			<description>トップページにスライドショーを追加しました。</description>
+			<pubDate>Tue, 13 Mar 2026 00:00:00 GMT</pubDate>
 		</item>
 	</channel>
 </rss>
